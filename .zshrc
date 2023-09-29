@@ -121,8 +121,3 @@ alias f="lsb_release -sd"
 # VPN
 alias vpnon="sudo wg-quick up /etc/wireguard/wgclient_11.conf"
 alias vpnoff="sudo wg-quick down /etc/wireguard/wgclient_11.conf"
-
-# pnpm
-export PNPM_HOME="/home/kkulebaev/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
