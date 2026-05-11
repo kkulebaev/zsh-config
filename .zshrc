@@ -119,6 +119,16 @@ alias open='xdg-open .'
 # Lofi
 alias lofi='mpv --volume=40 "https://play.streamafrica.net/lofiradio"'
 
+# WebStorm (JetBrains Toolbox) — detached from terminal
+webstorm() {
+  nohup "$HOME/.local/share/JetBrains/Toolbox/scripts/webstorm" "$@" >/dev/null 2>&1 &!
+}
+
+# Brave — detached from terminal
+brave() {
+  nohup /usr/bin/brave-browser "$@" >/dev/null 2>&1 &!
+}
+
 # Neofetch
 alias n="neofetch"
 alias k="uname -rs"
