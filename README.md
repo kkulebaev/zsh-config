@@ -1,6 +1,22 @@
-# zsh-config
+<pre align="center">
+███████╗███████╗██╗  ██╗      ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+╚══███╔╝██╔════╝██║  ██║     ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+  ███╔╝ ███████╗███████║     ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+ ███╔╝  ╚════██║██╔══██║     ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+███████╗███████║██║  ██║     ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+╚══════╝╚══════╝╚═╝  ╚═╝      ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ 
+</pre>
 
-Personal zsh configuration for Fedora Linux, built on Oh My Zsh with the Spaceship prompt.
+<p align="center">
+  <em>Personal zsh configuration for Fedora Linux — Oh My Zsh + Spaceship prompt</em>
+</p>
+
+<p align="center">
+  <img alt="Shell" src="https://img.shields.io/badge/shell-zsh-1A1A1A?style=flat-square">
+  <img alt="Framework" src="https://img.shields.io/badge/framework-Oh%20My%20Zsh-C50F1F?style=flat-square">
+  <img alt="Theme" src="https://img.shields.io/badge/theme-Spaceship-8B5CF6?style=flat-square">
+  <img alt="OS" src="https://img.shields.io/badge/OS-Fedora%20Linux-51A2DA?style=flat-square">
+</p>
 
 ## Stack
 
