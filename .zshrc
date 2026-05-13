@@ -129,6 +129,16 @@ brave() {
   nohup /usr/bin/brave-browser "$@" >/dev/null 2>&1 &!
 }
 
+# Mattermost — detached from terminal
+mattermost() {
+  nohup /usr/bin/mattermost-desktop "$@" >/dev/null 2>&1 &!
+}
+
+# Obsidian (Flatpak) — detached from terminal
+obsidian() {
+  nohup flatpak run md.obsidian.Obsidian "$@" >/dev/null 2>&1 &!
+}
+
 # Neofetch
 alias n="neofetch"
 alias k="uname -rs"
