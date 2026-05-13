@@ -145,6 +145,23 @@ alias k="uname -rs"
 alias g="gnome-shell --version"
 alias f="lsb_release -sd"
 
+# OSC 7: report cwd so VTE terminals (ddterm/gnome-terminal) open new tabs here
+__osc7_cwd() {
+  local enc
+  if [ -x /usr/libexec/vte-urlencode-cwd ]; then
+    enc=$(/usr/libexec/vte-urlencode-cwd)
+  else
+    enc=$PWD
+  fi
+  if [ -n "$TMUX" ]; then
+    printf '\ePtmux;\e\e]7;file://%s%s\e\e\\\e\\' "$HOSTNAME" "$enc"
+  else
+    printf '\e]7;file://%s%s\e\\' "$HOSTNAME" "$enc"
+  fi
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd __osc7_cwd
+
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
