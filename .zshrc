@@ -119,6 +119,9 @@ alias open='xdg-open .'
 # Lofi
 alias lofi='mpv --volume=40 "https://play.streamafrica.net/lofiradio"'
 
+# Dota
+alias dota='streamlink --player=mpv twitch.tv/dota2_paragon_ru best'
+
 # WebStorm (JetBrains Toolbox) — detached from terminal
 webstorm() {
   nohup "$HOME/.local/share/JetBrains/Toolbox/scripts/webstorm" "$@" >/dev/null 2>&1 &!
